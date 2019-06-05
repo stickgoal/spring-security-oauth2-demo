@@ -1,0 +1,1 @@
+insert into eu_user(username,password,register_time) values ('lucas','$2a$10$GIt/5JPwVaLheV15N3DEDuGMj/RD1xl2zSANXgQnwZK/TWb5J/94m',now())
