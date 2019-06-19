@@ -10,9 +10,10 @@ spring:
     password: root123
     hikari:
       maximum-pool-size: 1
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
     hibernate:
       ddl-auto: create
 logging:

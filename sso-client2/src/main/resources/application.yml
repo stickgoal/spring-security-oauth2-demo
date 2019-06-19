@@ -1,0 +1,19 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /ui2
+  session:
+    cookie: UI2SESSION
+security:
+  basic: false
+  oauth2:
+    client:
+      clientId: client_2
+      clientSecret: topsecret
+      accessTokenUri: http://localhost:8081/auth/oauth/token
+      userAuthorizationUri: http://localhost:8081/auth/oauth/authorize
+    resource:
+      userInfoUri: http://localhost:8081/auth/user/me
+spring:
+  thymeleaf:
+    cache: false
